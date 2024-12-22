@@ -1,0 +1,22 @@
+# Ignore all files ending with .log
+
+*.log
+*.kaggle
+
+
+
+# Ignore the "temp" directory
+
+temp/
+
+
+
+# Ignore "config.json" file in the current directory
+
+config.json
+
+
+
+# Ignore "password.txt" in any directory
+
+**/password.txt
