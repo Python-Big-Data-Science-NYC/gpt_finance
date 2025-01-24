@@ -1,0 +1,19 @@
+
+Citations:
+1. Cloudera: CIO Whitepaper: Data Architecture and Strategy in the AI Era
+   URL: https://fr.cloudera.com/content/dam/www/marketing/resources/whitepapers/cio-whitepaper-data-architecture-and-strategy-in-the-ai-era.pdf
+
+2. Dataversity: AArch Slides
+   URL: https://content.dataversity.net/rs/656-WMW-918/images/JAN%2025_AArch_Slides.pdf
+
+3. Unknown: A CIO’s Guide to Data Lake Management for Generative AI
+   URL: https://cdn.prod.website-files.com/6130fa1501794e37c21867cf/669043d88c811fb172bcc278_A%20CIO%E2%80%99s%20guide%20to%20data%20lake%20management%20for%20generative%20AI.pdf
+
+4. Oracle: Modern Data Platform and Generative AI
+   URL: https://aspire-consulting.com/wp-content/uploads/2024/07/Oracle_Modern_Data_Platform_and_Generative_AI.pdf
+
+5. Oracle: HeatWave and Generative AI: Technical Brief
+   URL: https://www.oracle.com/a/ocom/docs/heatwave-genai-technical-brief.pdf
+
+6. IDC: Generative AI is Evolving at Record Speeds (Dell Technologies)
+   URL: https://www.delltechnologies.com/asset/da-dk/products/networking/industry-market/idc-genai-is-evolving-at-record-speeds.pdf
