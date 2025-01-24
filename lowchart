@@ -1,0 +1,14 @@
+digraph {
+	graph [rankdir=LR]
+	Start [label="Start Program" color=lightblue shape=ellipse style=filled]
+	Init [label="Initialize Model" shape=box]
+	Prompt [label="User Inputs Prompt" shape=parallelogram]
+	Interpret [label="Interpret Prompt" shape=box]
+	Query [label="Perform Retrieval Task" shape=box]
+	End [label="End Program" color=lightgrey shape=ellipse style=filled]
+	Start -> Init
+	Init -> Prompt
+	Prompt -> Interpret
+	Interpret -> Query
+	Query -> End
+}

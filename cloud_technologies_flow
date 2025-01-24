@@ -1,0 +1,13 @@
+digraph Cloud_Technologies {
+	A [label="Compute Services (Nguyen, 2021)"]
+	B [label="Storage Services (Lee, 2019)"]
+	C [label="Networking Services (Kumar et al., 2020)"]
+	D [label="Machine Learning Services (Zhao & Wang, 2022)"]
+	E [label="Serverless Computing (Clark, 2021)"]
+	F [label="Cloud Security (Sharma & Patel, 2020)"]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+}

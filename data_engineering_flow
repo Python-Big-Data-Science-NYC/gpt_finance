@@ -1,0 +1,13 @@
+digraph Data_Engineering {
+	A [label="Data Collection (Smith, 2020)"]
+	B [label="Data Cleaning (Jones et al., 2019)"]
+	C [label="Data Transformation (Brown, 2021)"]
+	D [label="Data Storage (Taylor, 2020)"]
+	E [label="Data Analytics (Green, 2018)"]
+	F [label="Machine Learning (Miller & White, 2022)"]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+}

@@ -1,0 +1,11 @@
+digraph Applications {
+	A [label="Healthcare Applications (Adams, 2020)"]
+	B [label="Finance Applications (Walker et al., 2021)"]
+	C [label="Retail Applications (Lopez, 2019)"]
+	D [label="Energy Applications (Singh & Gupta, 2022)"]
+	E [label="Telecom Applications (Davis, 2020)"]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+}
