@@ -1,0 +1,39 @@
+digraph "Generative AI Training Architecture" {
+	graph [fontcolor="#2D3436" fontname="Sans-Serif" fontsize=15 label="Generative AI Training Architecture" nodesep=0.60 pad=2.0 rankdir=LR ranksep=0.75 splines=ortho]
+	node [fixedsize=true fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 height=1.4 imagescale=true labelloc=b shape=box style=rounded width=1.4]
+	edge [color="#7B8894"]
+	"87f6c8b226704ded83c885fdccb7b9aa" [label=Learners height=1.9 image="/home/j/anaconda3/lib/python3.12/site-packages/resources/onprem/client/users.png" shape=none]
+	a26e2b98847c4945addae8ad56fe73e4 -> "449b19e121db4940b7d5bba37f1655df" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	"449b19e121db4940b7d5bba37f1655df" -> "8c43d0c90b9f4a2997ba73a330bd8a1c" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	subgraph "cluster_AI Agent Development" {
+		graph [bgcolor="#E5F5FD" fontname="Sans-Serif" fontsize=12 label="AI Agent Development" labeljust=l pencolor="#AEB6BE" rankdir=LR shape=box style=rounded]
+		"449b19e121db4940b7d5bba37f1655df" [label="LLM Model" height=1.9 image="/home/j/anaconda3/lib/python3.12/site-packages/resources/aws/ml/sagemaker.png" shape=none]
+		"8c43d0c90b9f4a2997ba73a330bd8a1c" [label="Multimodal AI" height=1.9 image="/home/j/anaconda3/lib/python3.12/site-packages/resources/aws/ml/sagemaker.png" shape=none]
+		a26e2b98847c4945addae8ad56fe73e4 [label="Training Data" height=1.9 image="/home/j/anaconda3/lib/python3.12/site-packages/resources/generic/storage/storage.png" shape=none]
+	}
+	d5708c23245d458fa0a244da92c46b5e -> d05c56d08e16457891b7ec7754f65f3e [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	d05c56d08e16457891b7ec7754f65f3e -> f81576799c4e46d6ac643d30a776c4e7 [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	subgraph "cluster_Training Modules" {
+		graph [bgcolor="#E5F5FD" fontname="Sans-Serif" fontsize=12 label="Training Modules" labeljust=l pencolor="#AEB6BE" rankdir=LR shape=box style=rounded]
+		d5708c23245d458fa0a244da92c46b5e [label="Simulated Scenarios" height=1.9 image="/home/j/anaconda3/lib/python3.12/site-packages/resources/onprem/compute/server.png" shape=none]
+		d05c56d08e16457891b7ec7754f65f3e [label="Feedback System" height=1.9 image="/home/j/anaconda3/lib/python3.12/site-packages/resources/onprem/compute/server.png" shape=none]
+		f81576799c4e46d6ac643d30a776c4e7 [label="Adaptive Learning" height=1.9 image="/home/j/anaconda3/lib/python3.12/site-packages/resources/programming/language/python.png" shape=none]
+	}
+	d05c56d08e16457891b7ec7754f65f3e -> "250aa7fa6672478384fe80616dac32da" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	"250aa7fa6672478384fe80616dac32da" -> "10b2dabfa5794d7b8ba18da4a4b8efe4" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	subgraph "cluster_Evaluation Framework" {
+		graph [bgcolor="#E5F5FD" fontname="Sans-Serif" fontsize=12 label="Evaluation Framework" labeljust=l pencolor="#AEB6BE" rankdir=LR shape=box style=rounded]
+		"250aa7fa6672478384fe80616dac32da" [label="Performance Metrics" height=1.9 image="/home/j/anaconda3/lib/python3.12/site-packages/resources/onprem/database/postgresql.png" shape=none]
+		"10b2dabfa5794d7b8ba18da4a4b8efe4" [label="AI Evaluation" height=1.9 image="/home/j/anaconda3/lib/python3.12/site-packages/resources/onprem/compute/server.png" shape=none]
+	}
+	"10b2dabfa5794d7b8ba18da4a4b8efe4" -> "0076be2fb1fa4f5b955f7649185a3488" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	"0076be2fb1fa4f5b955f7649185a3488" -> ce2d7a81dce140a2889fe607370e9535 [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	subgraph cluster_Deployment {
+		graph [bgcolor="#E5F5FD" fontname="Sans-Serif" fontsize=12 label=Deployment labeljust=l pencolor="#AEB6BE" rankdir=LR shape=box style=rounded]
+		ce2d7a81dce140a2889fe607370e9535 [label="LMS / Training Systems" height=1.9 image="/home/j/anaconda3/lib/python3.12/site-packages/resources/onprem/compute/server.png" shape=none]
+		"0076be2fb1fa4f5b955f7649185a3488" [label="AI Assistants" height=1.9 image="/home/j/anaconda3/lib/python3.12/site-packages/resources/onprem/compute/server.png" shape=none]
+	}
+	"87f6c8b226704ded83c885fdccb7b9aa" -> "0076be2fb1fa4f5b955f7649185a3488" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	"0076be2fb1fa4f5b955f7649185a3488" -> d5708c23245d458fa0a244da92c46b5e [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	f81576799c4e46d6ac643d30a776c4e7 -> "87f6c8b226704ded83c885fdccb7b9aa" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+}

@@ -1,0 +1,24 @@
+digraph "Future Workforce Projection" {
+	rankdir=TB ratio=1 size="10,10"
+	"AI Adoption" [label="AI Adoption
+(75% of firms by 2030 - Cazzaniga et al. 2024)" fillcolor=lightblue shape=ellipse style=filled]
+	"Job Displacement" [label="Job Displacement
+(30% of roles automated - Huang et al. 2023)" fillcolor=lightcoral shape=parallelogram style=filled]
+	"Job Creation" [label="Job Creation
+(20% new AI roles - Ji et al. 2023)" fillcolor=lightgreen shape=parallelogram style=filled]
+	"Skill Evolution" [label="Skill Evolution
+(85% new skills required - Laukes 2024)" fillcolor=lightyellow shape=diamond style=filled]
+	"Industry Impact" [label="Industry Impact
+(90% impact in finance & tech - Rane 2023)" fillcolor=lightgray shape=box style=filled]
+	"Economic Shift" [label="Economic Shift
+(5-7% GDP growth - Ellingrud et al. 2023)" fillcolor=lightpink shape=ellipse style=filled]
+	"Reskilling Demand" [label="Reskilling Demand
+(1B+ workers retrained - Oschinski et al. 2024)" fillcolor=lightcyan shape=ellipse style=filled]
+	"AI Adoption" -> "Job Displacement"
+	"AI Adoption" -> "Job Creation"
+	"AI Adoption" -> "Skill Evolution"
+	"Skill Evolution" -> "Reskilling Demand"
+	"Job Creation" -> "Economic Shift"
+	"Job Displacement" -> "Reskilling Demand"
+	"Skill Evolution" -> "Industry Impact"
+}

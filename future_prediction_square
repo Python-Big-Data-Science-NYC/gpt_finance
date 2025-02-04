@@ -1,0 +1,24 @@
+digraph "Future Prediction Architecture" {
+	rankdir=TB ratio=1 size="10,10"
+	Users [label="Users
+(100M+ online learners)" fillcolor=lightblue shape=ellipse style=filled]
+	"AI Model" [label="AI Model
+(>95% accuracy)" fillcolor=lightgray shape=box style=filled]
+	"Historical Data" [label="Historical Data
+(500TB)" fillcolor=lightyellow shape=parallelogram style=filled]
+	"Trend Analysis" [label="Trend Analysis
+(200k job trends)" fillcolor=lightpink shape=diamond style=filled]
+	"Future Demand" [label="Future Job Demand
+(75% automation risk)" fillcolor=lightgreen shape=ellipse style=filled]
+	"Automation Impact" [label="Automation Impact
+(50M jobs lost)" fillcolor=lightcoral shape=ellipse style=filled]
+	"Decision Support" [label="Decision Support
+(Optimized reskilling)" fillcolor=lightcyan shape=box style=filled]
+	Users -> "AI Model"
+	"AI Model" -> "Historical Data"
+	"Historical Data" -> "Trend Analysis"
+	"Trend Analysis" -> "Future Demand"
+	"Trend Analysis" -> "Automation Impact"
+	"Future Demand" -> "Decision Support"
+	"Automation Impact" -> "Decision Support"
+}

@@ -1,0 +1,14 @@
+digraph "Workforce Upskilling" {
+	rankdir=LR size=8
+	Users [fillcolor=lightblue shape=ellipse style=filled]
+	"AI Training Model" [fillcolor=lightgray shape=box style=filled]
+	"Skill Gap Analysis" [fillcolor=lightyellow shape=parallelogram style=filled]
+	"Personalized Learning Path" [fillcolor=lightpink shape=diamond style=filled]
+	"Adaptive Learning Modules" [fillcolor=lightgreen shape=ellipse style=filled]
+	"Certification & Jobs" [fillcolor=lightcoral shape=ellipse style=filled]
+	Users -> "AI Training Model"
+	"AI Training Model" -> "Skill Gap Analysis"
+	"Skill Gap Analysis" -> "Personalized Learning Path"
+	"Personalized Learning Path" -> "Adaptive Learning Modules"
+	"Adaptive Learning Modules" -> "Certification & Jobs"
+}

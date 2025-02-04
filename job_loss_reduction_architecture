@@ -1,0 +1,14 @@
+digraph "Job Loss Reduction" {
+	rankdir=LR size=8
+	Users [fillcolor=lightblue shape=ellipse style=filled]
+	"AI Job Impact Model" [fillcolor=lightgray shape=box style=filled]
+	"Industry Data" [fillcolor=lightyellow shape=parallelogram style=filled]
+	"Job Loss Prediction" [fillcolor=lightpink shape=diamond style=filled]
+	"Reskilling Suggestion" [fillcolor=lightgreen shape=ellipse style=filled]
+	"Alternative Career Paths" [fillcolor=lightcoral shape=ellipse style=filled]
+	Users -> "AI Job Impact Model"
+	"AI Job Impact Model" -> "Industry Data"
+	"Industry Data" -> "Job Loss Prediction"
+	"Job Loss Prediction" -> "Reskilling Suggestion"
+	"Reskilling Suggestion" -> "Alternative Career Paths"
+}

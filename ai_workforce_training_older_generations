@@ -1,0 +1,24 @@
+digraph "AI Workforce Training for Older Generations" {
+	nodesep=0.2 rankdir=TB ranksep=0.3 ratio=compress size="10,10"
+	"AI Adoption" [label="AI Adoption
+(75% of firms by 2030)" fillcolor=lightblue fontsize=18 height=1 shape=ellipse style=filled width=1.5]
+	"Job Displacement" [label="Job Displacement
+(30% of roles automated)" fillcolor=lightcoral fontsize=18 height=1 shape=parallelogram style=filled width=1.5]
+	"Older Workforce Training" [label="Older Workforce Training
+(50M+ workers reskilled)" fillcolor=lightyellow fontsize=18 height=1 shape=diamond style=filled width=1.5]
+	"AI Skills Gap" [label="AI Skills Gap
+(65% lack AI literacy)" fillcolor=lightgray fontsize=18 height=1 shape=box style=filled width=1.5]
+	"Workforce Retention" [label="Workforce Retention
+(Extends careers by 10+ yrs)" fillcolor=lightgreen fontsize=18 height=1 shape=ellipse style=filled width=1.5]
+	"Economic Impact" [label="Economic Impact
+($1T+ GDP boost)" fillcolor=lightpink fontsize=18 height=1 shape=ellipse style=filled width=1.5]
+	"Public-Private AI Initiatives" [label="Public-Private AI Initiatives
+(Gov & Industry AI Training)" fillcolor=lightcyan fontsize=18 height=1 shape=ellipse style=filled width=1.5]
+	"AI Adoption" -> "Job Displacement"
+	"AI Adoption" -> "Older Workforce Training"
+	"Older Workforce Training" -> "AI Skills Gap"
+	"Older Workforce Training" -> "Workforce Retention"
+	"AI Skills Gap" -> "Public-Private AI Initiatives"
+	"Workforce Retention" -> "Economic Impact"
+	"Public-Private AI Initiatives" -> "Economic Impact"
+}

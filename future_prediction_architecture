@@ -1,0 +1,17 @@
+digraph "Future Prediction Architecture" {
+	rankdir=LR size=8
+	Users [fillcolor=lightblue shape=ellipse style=filled]
+	"AI Prediction Model" [fillcolor=lightgray shape=box style=filled]
+	"Historical Data" [fillcolor=lightyellow shape=parallelogram style=filled]
+	"Trend Analysis" [fillcolor=lightpink shape=diamond style=filled]
+	"Future Job Demand" [fillcolor=lightgreen shape=ellipse style=filled]
+	"Automation Impact" [fillcolor=lightcoral shape=ellipse style=filled]
+	"Decision Support" [fillcolor=lightcyan shape=box style=filled]
+	Users -> "AI Prediction Model"
+	"AI Prediction Model" -> "Historical Data"
+	"Historical Data" -> "Trend Analysis"
+	"Trend Analysis" -> "Future Job Demand"
+	"Trend Analysis" -> "Automation Impact"
+	"Future Job Demand" -> "Decision Support"
+	"Automation Impact" -> "Decision Support"
+}

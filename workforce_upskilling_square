@@ -1,0 +1,20 @@
+digraph "Workforce Upskilling" {
+	rankdir=TB ratio=1 size="10,10"
+	Users [label="Users
+(10M learners)" fillcolor=lightblue shape=ellipse style=filled]
+	"AI Training Model" [label="AI Trainer
+(98% engagement rate)" fillcolor=lightgray shape=box style=filled]
+	"Skill Gap Analysis" [label="Skill Gap Analysis
+(40% gap in tech skills)" fillcolor=lightyellow shape=parallelogram style=filled]
+	"Personalized Learning" [label="Adaptive Learning
+(5X faster progress)" fillcolor=lightpink shape=diamond style=filled]
+	"Learning Modules" [label="Learning Modules
+(1,000+ lessons)" fillcolor=lightgreen shape=ellipse style=filled]
+	Certifications [label="Certifications & Jobs
+(85% job placement)" fillcolor=lightcoral shape=ellipse style=filled]
+	Users -> "AI Training Model"
+	"AI Training Model" -> "Skill Gap Analysis"
+	"Skill Gap Analysis" -> "Personalized Learning"
+	"Personalized Learning" -> "Learning Modules"
+	"Learning Modules" -> Certifications
+}
