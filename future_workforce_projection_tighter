@@ -1,5 +1,5 @@
 digraph "Future Workforce Projection" {
-	nodesep=0.2 rankdir=TB ranksep=0.3 ratio=compress size="10,10"
+	nodesep=0.2 rankdir=TB ranksep=0.3 ratio=compress size="50,50"
 	"AI Adoption" [label="AI Adoption
 (75% of firms by 2030 - Cazzaniga et al. 2024)" fillcolor=lightblue fontsize=18 height=1 shape=ellipse style=filled width=1.5]
 	"Job Displacement" [label="Job Displacement
