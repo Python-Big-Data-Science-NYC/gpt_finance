@@ -1,5 +1,5 @@
 digraph "Future Workforce Projection" {
-	nodesep=0.5 rankdir=TB ranksep=0.5 ratio=auto size="50,50"
+	nodesep=0.6 rankdir=BT ranksep=0.6 ratio=fill size="10,10"
 	"AI Adoption" [label="AI Adoption
 (75% of firms by 2030 - Cazzaniga et al. 2024)" fillcolor=lightblue fontsize=18 height=1.2 shape=ellipse style=filled width=1.8]
 	"Job Displacement" [label="Job Displacement
@@ -14,6 +14,16 @@ digraph "Future Workforce Projection" {
 (5-7% GDP growth - Ellingrud et al. 2023)" fillcolor=lightpink fontsize=18 height=1.2 shape=ellipse style=filled width=1.8]
 	"Reskilling Demand" [label="Reskilling Demand
 (1B+ workers retrained - Oschinski et al. 2024)" fillcolor=lightcyan fontsize=18 height=1.2 shape=ellipse style=filled width=1.8]
+	{
+		rank=same
+		"Job Displacement"
+		"Job Creation"
+	}
+	{
+		rank=same
+		"Industry Impact"
+		"Economic Shift"
+	}
 	"AI Adoption" -> "Job Displacement"
 	"AI Adoption" -> "Job Creation"
 	"AI Adoption" -> "Skill Evolution"
