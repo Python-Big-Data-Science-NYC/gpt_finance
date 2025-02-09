@@ -1,0 +1,17 @@
+digraph AI_Agent_Framework_Architecture {
+	node [color=lightblue shape=ellipse style=filled]
+	rankdir=LR size="25,25"
+	Data [label="Data Sources"]
+	LLMs [label=LLMs]
+	Perception [label=Perception]
+	Decision [label=Decision]
+	Execution [label=Execution]
+	LangGraph [label=LangGraph color=lightcoral shape=box]
+	SmolAgents [label=SmolAgents color=lightgreen shape=box]
+	Data -> Perception [label=Feeds]
+	LLMs -> Perception [label=Augments]
+	Perception -> Decision
+	Decision -> Execution
+	LangGraph -> Decision [label=Supports]
+	SmolAgents -> Execution [label=Implements]
+}

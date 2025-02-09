@@ -1,0 +1,13 @@
+// AI Kubernetes Architecture
+digraph {
+	K8s [label="Kubernetes Cluster"]
+	AI [label="AI Agents"]
+	ML [label="ML Models"]
+	Data [label="Data Storage"]
+	App [label=Applications]
+	K8s -> AI [label=Orchestrates]
+	AI -> ML [label=Uses]
+	AI -> Data [label="Fetches Data"]
+	ML -> Data [label="Trains on"]
+	AI -> App [label="Deploys to"]
+}

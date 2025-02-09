@@ -1,0 +1,16 @@
+// Generative AI Full Stack Framework for Financial Risk
+digraph {
+	A [label="Data Engineering Layer"]
+	B [label="Model Training & Serving Layer"]
+	C [label="Real-Time Risk Inference Layer"]
+	D [label="AWS Lambda, S3, SageMaker"]
+	E [label="Apache Spark, Delta Lake, AWS Glue"]
+	F [label="Ray with PyTorch/TensorFlow, Kubernetes"]
+	G [label="Kafka + Spark Streaming, ONNX Runtime"]
+	A -> B [label="Data to Model Training"]
+	B -> C [label="Model Deployment to Inference"]
+	A -> E [label="Data Processing with Spark"]
+	B -> F [label="AI Model Training with Ray"]
+	C -> G [label="Real-Time Risk Computation"]
+	D -> C [label="Serverless Inference"]
+}

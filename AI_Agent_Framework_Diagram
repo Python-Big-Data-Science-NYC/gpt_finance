@@ -1,0 +1,32 @@
+digraph AI_Agent_Framework_Architecture {
+	rankdir=TB size="12,12"
+	"Data Sources" [label="Data Sources (Enterprise Data, APIs, Systems)"]
+	LLMs [label="LLMs (Large Language Models)"]
+	"Perception Layer" [label="Perception Layer (Input Handling)"]
+	"Decision Layer" [label="Decision-Making Layer (Reasoning Engines)"]
+	"Execution Layer" [label="Execution Layer (Task Execution)"]
+	LangGraph [label=LangGraph]
+	CrewAI [label=CrewAI]
+	SmolAgents [label=SmolAgents]
+	"Mosaic AI" [label="Mosaic AI"]
+	Watsonx [label=Watsonx]
+	"AWS Bedrock" [label="AWS Bedrock"]
+	AutoGen [label=AutoGen]
+	Langchain [label=Langchain]
+	"Semantic Kernel" [label="Semantic Kernel"]
+	"NVIDIA NIM" [label="NVIDIA NIM"]
+	"Data Sources" -> "Perception Layer"
+	LLMs -> "Perception Layer"
+	"Perception Layer" -> "Decision Layer"
+	"Decision Layer" -> "Execution Layer"
+	LangGraph -> "Decision Layer"
+	CrewAI -> "Decision Layer"
+	SmolAgents -> "Execution Layer"
+	"Mosaic AI" -> "Execution Layer"
+	Watsonx -> "Decision Layer"
+	"AWS Bedrock" -> "Perception Layer"
+	AutoGen -> "Decision Layer"
+	Langchain -> "Perception Layer"
+	"Semantic Kernel" -> "Decision Layer"
+	"NVIDIA NIM" -> "Execution Layer"
+}
